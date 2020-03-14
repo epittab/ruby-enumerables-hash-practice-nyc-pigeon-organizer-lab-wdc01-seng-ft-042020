@@ -1,4 +1,17 @@
 
+def create_new_pigeon_key(new_key, new_value, hash)
+    new_value.values.each do |item|
+        item.each do |name|
+            if (!hash[name])
+                hash[name] = {}
+            end
+        end
+        
+    end
+    
+    return hash
+end
+
 def add_second_level_symbol(new_key, hash)
 
     hash.each do |key, value| 
