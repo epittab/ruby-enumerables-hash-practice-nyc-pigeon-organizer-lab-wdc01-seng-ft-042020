@@ -1,4 +1,14 @@
 
+def add_second_level(new_key, hash)
+
+    hash.each do |key, value| 
+        if (!hash[key][new_key])
+            hash[key][new_key] = []
+        end
+    end
+
+end
+
 
 def add_third_level_array(old_key, old_hash, hash)
 
