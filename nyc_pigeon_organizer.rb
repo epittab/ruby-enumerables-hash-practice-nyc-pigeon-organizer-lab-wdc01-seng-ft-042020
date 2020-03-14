@@ -51,7 +51,7 @@ def nyc_pigeon_organizer(data)
     data.each do |key, value|
 
         hash = create_new_pigeon_key(key, value, hash)
-
+        
         hash = add_second_level_symbol(key, hash)
 
         hash = add_third_level_array(key, value, hash)
