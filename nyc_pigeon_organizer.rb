@@ -1,3 +1,13 @@
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  
+  reorganized_hash = {}
+  
+  data.each_pair do |pair|
+  
+      
+      puts pair
+      
+    
+  end
+  puts reorganized_hash
 end
