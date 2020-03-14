@@ -1,5 +1,5 @@
 
-def add_second_level(new_key, hash)
+def add_second_level_symbol(new_key, hash)
 
     hash.each do |key, value| 
         if (!hash[key][new_key])
@@ -39,7 +39,7 @@ def nyc_pigeon_organizer(data)
 
         hash = create_new_pigeon_key(key, value, hash)
 
-        hash = add_second_level(key, hash)
+        hash = add_second_level_symbol(key, hash)
 
         hash = add_third_level_array(key, value, hash)
 
